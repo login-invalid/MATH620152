@@ -1,0 +1,288 @@
+[
+    {
+        "REGION":"DAKAR",
+        "DEPARTEMENTS":[
+            {   
+                "NOM":"DAKAR",
+                "District":["DAKAR OUEST","DAKAR SUD","DAKAR CENTRE","DAKAR NORD"],
+                "CAS": 0,
+                "MALADE": 0},
+            {   
+                "NOM":"GUÉDIAWAYE",
+                "District":["GUÉDIAWAYE"],
+                "CAS":0,
+                "MALADE": 0},
+            {   
+                "NOM":"PIKINE",
+                "District":["PIKINE","YEUMBEUL","KEUR MASSAR","MBAO"],
+                "CAS": 0,
+                "MALADE": 0},
+            {   
+                "NOM":"RUFISQUE",
+                "District":["RUFISQUE","DIAMNIADIO","SANGALKAM"],
+                "CAS": 0,
+                "MALADE": 0}],
+                "CAS":0
+    },
+    {
+        "REGION":"DIOURBEL",
+        "DEPARTEMENTS":[
+            {
+                "NOM":"DIOURBEL",
+                "District":["DIOURBEL","BAMBEY"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM": "MBACKÉ",
+                "District": ["TOUBA", "MBACKÉ"],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    },
+    {
+        "REGION":"FATICK",
+        "DEPARTEMENTS": [
+            {
+                "NOM":"FATICK",
+                "District":["FATICK","DIAKHAO","DIOFFIOR","NIAKHAR"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+              "NOM": "GOSSAS",
+              "District": ["GOSSAS"],
+              "CAS": 0,
+              "MALADE": 0
+            },
+            {
+                "NOM": "FOUNDIOUGNE",
+                "District": ["SOKONE","PASSY","FOUNDIOUGNE"],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    },
+    {
+        "REGION":"KAFFRINE",
+        "DEPARTEMENTS": [{
+                "NOM": "KOUNGHEUL",
+                "District": ["KOUNGUEUL"],
+                "CAS": 0,
+                "MALADE": 0},{
+                "NOM": "BIRKELANE",
+                "District": ["BIRKELANE"],
+                "CAS": 0,
+                "MALADE": 0},{
+                "NOM": "KAFFRINE",
+                "District": ["KAFFRINE"],
+                "CAS": 0,
+                "MALADE": 0},{
+                "NOM": "MALEM HODDAR",
+                "District": ["MALEM HODDAR"],
+                "CAS": 0,
+                "MALADE": 0
+        }],
+        "CAS":0
+    },
+    {
+        "REGION":"KAOLACK",
+        "DEPARTEMENTS": [
+            {
+                "NOM": "NIORO DU RIP",
+                "District": ["NIORO DU RIP"],
+                "CAS": 0,
+                "MALADE": 0},{
+                "NOM": "KAOLACK",
+                "District": ["KAOLACK","NDOFFANE"],
+                "CAS": 0,
+                "MALADE": 0},{
+                    "NOM": "GUINGUINÉO",
+                    "District": ["GUINGUINÉO"],
+                    "CAS": 0,
+                    "MALADE": 0
+                }
+        ],
+        "CAS":0
+    },
+    {
+        "REGION":"KÉDOUGOU",
+        "DEPARTEMENTS": [{
+                "NOM": "KÉDOUGOU",
+                "District": [
+                    "KÉDOUGOU"
+                ],
+                "CAS": 0,
+                "MALADE": 0
+            },{
+                "NOM": "SARAYA",
+                "District": [
+                    "SARAYA"
+                ],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    },
+    {
+        "REGION":"KOLDA",
+        "DEPARTEMENTS": [
+            {
+                    "NOM":"VÉLINGARA",
+                    "District":["VÉLINGARA"],
+                    "CAS": 0,
+                    "MALADE": 0},
+                {
+                    "NOM": "KOLDA",
+                    "District": ["KOLDA"],
+                    "CAS": 0,
+                    "MALADE": 0
+                }],
+        "CAS":0
+    },
+    {
+        "REGION":"LOUGA",
+        "DEPARTEMENTS": [
+            {
+                "NOM":"LOUGA",
+                "District":["LOUGA","SAKAL","COKI","KEUR MOMAR SARR"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM": "LINGUÈRE",
+                "District": ["LINGUÈRE"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM": "KÉBÉMER",
+                "District": [
+                    "DAROU MOUSTY","KÉBÉMER"
+                ],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    },
+    {
+        "REGION":"MATAM",
+        "DEPARTEMENTS": [{
+                "NOM": "RANÉROU",
+                "District": ["RANÉROU"],
+                "CAS": 0,
+                "MALADE": 0
+            },{
+                "NOM": "MATAM",
+                "District": ["MATAM","THILOGNE"],
+                "CAS": 0,
+                "MALADE": 0
+            },{
+                "NOM": "MATAM",
+                "District": ["MATAM","THILOGNE"],
+                "CAS": 0,
+                "MALADE": 0
+            },{
+                "NOM": "KANEL",
+                "District": ["KANEL"],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    },
+    {
+        "REGION":"SAINT LOUIS",
+        "DEPARTEMENTS": [
+            {
+                "NOM":"SAINT LOUIS",
+                "District":["SAINT LOUIS"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM":"DAGANA",
+                "District":["RICHARD TOLL","DAGANA"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM": "PODOR",
+                "District": ["PÉTÉ","PODOR"],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    },
+    {
+        "REGION":"SÉDHIOU",
+        "DEPARTEMENTS": [
+            {
+                "NOM": "SÉDHIOU",
+                "District": [
+                    "SÉDHIOU"
+                ],
+                "CAS": 0,
+                "MALADE": 0
+            },{
+                "NOM": "BOUNKILING",
+                "District": [
+                    "BOUNKILING"
+                ],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    },
+    {
+        "REGION":"TAMBACOUNDA",
+        "DEPARTEMENTS": [{
+            "NOM":"GOUDIRY",
+            "District":["GOUDIRY"],
+            "CAS": 0,
+            "MALADE": 0},{
+            "NOM":"TAMBACOUNDA",
+            "District":["TAMBACOUNDA","MAKACOULIBANTANG"],
+            "CAS": 0,
+            "MALADE": 0}],
+        "CAS":0
+    },
+    {
+        "REGION":"THIÈS",
+        "DEPARTEMENTS": [
+            {
+                "NOM":"MBOUR",
+                "District":["MBOUR","POPENGUINE","THIADIAYE","JOAL"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM":"THIÈS",
+                "District":["THIÈS","POUT","KHOMBOLE"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM": "TIVAOUANE",
+                "District": [
+                    "TIVAOUANE","MÉKHÉ"
+                ],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    },
+    {
+        "REGION":"ZIGUINCHOR",
+        "DEPARTEMENTS": [
+            {
+                "NOM":"ZIGUINCHOR",
+                "District":["ZIGUINCHOR"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM":"OUSSOUYE",
+                "District":["OUSSOUYE"],
+                "CAS": 0,
+                "MALADE": 0},
+            {
+                "NOM": "BIGNONA",
+                "District": ["DIOULOULOU","BIGNONA","THIONCK-ESSYL"],
+                "CAS": 0,
+                "MALADE": 0
+            }],
+        "CAS":0
+    }
+]

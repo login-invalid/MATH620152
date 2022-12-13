@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-cn" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task_1 module &mdash; Final Reports - MATH620152 2.0 文档</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Final Reports - MATH620152
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Task_1 module</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Final Reports - MATH620152</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Task_1 module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Task_1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Task_1">
+<span id="task-1-module"></span><h1>Task_1 module<a class="headerlink" href="#module-Task_1" title="永久链接至标题">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Task_1.WebSchedules">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Task_1.</span></span><span class="sig-name descname"><span class="pre">WebSchedules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">web</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.WebSchedules" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.WebSchedules.getschedules">
+<span class="sig-name descname"><span class="pre">getschedules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.WebSchedules.getschedules" title="永久链接至目标">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><p><strong>item</strong><strong>(</strong><strong>json</strong><strong>)</strong> – json 文件对象, 从中解析日期、版本;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.WebSchedules.processtschedules">
+<span class="sig-name descname"><span class="pre">processtschedules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">isunique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isprint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.WebSchedules.processtschedules" title="永久链接至目标">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>isunique</strong><strong>(</strong><strong>bool</strong><strong>)</strong> – 如果为 True 则版本重复发布 , 只保留一条信息;</p></li>
+<li><p><strong>isprint</strong><strong>(</strong><strong>bool</strong><strong>)</strong> – 是否输出日志信息;</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.WebSchedules.updateschdeules">
+<span class="sig-name descname"><span class="pre">updateschdeules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checkdate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">datetime.date(2022,</span> <span class="pre">1,</span> <span class="pre">1)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.WebSchedules.updateschdeules" title="永久链接至目标">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><p><strong>check_date</strong><strong>(</strong><strong>datetime.date</strong><strong>)</strong> – 查找日期 , 如果在那天有新版本发布则会显示;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.WebSchedules.updateschedules_stored">
+<span class="sig-name descname"><span class="pre">updateschedules_stored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.WebSchedules.updateschedules_stored" title="永久链接至目标">¶</a></dt>
+<dd><p>更新 schedule;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Task_1.bayes_plot">
+<span class="sig-prename descclassname"><span class="pre">Task_1.</span></span><span class="sig-name descname"><span class="pre">bayes_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output_fig.png'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.bayes_plot" title="永久链接至目标">¶</a></dt>
+<dd><p>贝叶斯回归的图示;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 已完成训练的模型;</p></li>
+<li><p><strong>X</strong><strong>(</strong><strong>DataFrame</strong><strong>)</strong> – 预测数据;</p></li>
+<li><p><strong>y</strong><strong>(</strong><strong>DataFrame</strong><strong>)</strong> – 预测标签;</p></li>
+<li><p><strong>file_name</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 图片保存路径;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>是否成功的信息.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Task_1.data_cloud">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Task_1.</span></span><span class="sig-name descname"><span class="pre">data_cloud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_cloud" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_cloud.gen">
+<span class="sig-name descname"><span class="pre">gen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_cloud.gen" title="永久链接至目标">¶</a></dt>
+<dd><p>txt 文件读入 (中英文自动识别);</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_cloud.gen_wordcloud">
+<span class="sig-name descname"><span class="pre">gen_wordcloud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'english'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'wcd1.png'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">250</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_cloud.gen_wordcloud" title="永久链接至目标">¶</a></dt>
+<dd><p>依据指定文档前 n 个词语生成词云图片;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong><strong>(</strong><strong>str</strong><strong>)</strong> – ‘english’ or ‘chinese’;</p></li>
+<li><p><strong>n</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 文章前 n 个词;</p></li>
+<li><p><strong>file_name</strong> – 存储图片文件名;</p></li>
+<li><p><strong>max_words</strong> – 词云提取最大文字数量;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>是否成功的信息.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_cloud.mask">
+<span class="sig-name descname"><span class="pre">mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'english'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./support/data_cloud/pic2.png'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'wcd3.png'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">250</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_cloud.mask" title="永久链接至目标">¶</a></dt>
+<dd><p>mask 词云图像: 将从 pic 路径读取 mask 图片;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong><strong>(</strong><strong>str</strong><strong>)</strong> – ‘english’ or ‘chinese’;</p></li>
+<li><p><strong>pic</strong><strong>(</strong><strong>str</strong><strong>)</strong> – mask图片路径;</p></li>
+<li><p><strong>n</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 采用文档前 n 个词;</p></li>
+<li><p><strong>file_name</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 保存图片路径;</p></li>
+<li><p><strong>max_words</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 词云图像中最大词个数;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>是否成功的信息.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_cloud.show_text">
+<span class="sig-name descname"><span class="pre">show_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'english'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_cloud.show_text" title="永久链接至目标">¶</a></dt>
+<dd><p>展示指定文档;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong><strong>(</strong><strong>str</strong><strong>)</strong> – ‘english’ or ‘chinese’;</p></li>
+<li><p><strong>n</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 展示文章前 n 个词;</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_cloud.stop_words_mask">
+<span class="sig-name descname"><span class="pre">stop_words_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'wcd3.png'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">250</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_cloud.stop_words_mask" title="永久链接至目标">¶</a></dt>
+<dd><p>mask 词云图像: 带有停词库过滤;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 采用文档前 n 个词;</p></li>
+<li><p><strong>file_name</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 保存图片路径;</p></li>
+<li><p><strong>max_words</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 词云图像中最大词个数;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>是否成功的信息.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Task_1.data_learn">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Task_1.</span></span><span class="sig-name descname"><span class="pre">data_learn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_learn" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_learn.bayes_ridge_re">
+<span class="sig-name descname"><span class="pre">bayes_ridge_re</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_ARD</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_learn.bayes_ridge_re" title="永久链接至目标">¶</a></dt>
+<dd><p>贝叶斯回归模型拟合 , 返回为指定模型;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>formula</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 回归公式;</p></li>
+<li><p><strong>degree</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 模型参数 , 多项式拟合阶数;</p></li>
+<li><p><strong>bias</strong><strong>(</strong><strong>bool</strong><strong>)</strong> – True or False 是否采用偏置项;</p></li>
+<li><p><strong>test_ratio</strong><strong>(</strong><strong>float</strong><strong>)</strong> – 0~1数值 , 测试数据比例 , 设置为0时则默认训练用全量数据;</p></li>
+<li><p><strong>is_ARD</strong><strong>(</strong><strong>bool</strong><strong>)</strong> – True or False 采用ARD回归或者贝叶斯回归;</p></li>
+<li><p><strong>is_scale</strong><strong>(</strong><strong>bool</strong><strong>)</strong> – True or Flase 是否对数据进行归一化处理;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>拟合后的模型.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_learn.cluster_model">
+<span class="sig-name descname"><span class="pre">cluster_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'kmean'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwarg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_learn.cluster_model" title="永久链接至目标">¶</a></dt>
+<dd><p>聚类方法集成 , 返回为指定模型;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>formula</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 回归公式;</p></li>
+<li><p><strong>type</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 聚类模型类型 , 默认为 kmean;</p></li>
+<li><p><strong>random_seed</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 随机种子;</p></li>
+<li><p><strong>kwarg</strong> – 传入模型必须参数;</p></li>
+<li><p><strong>is_scale</strong><strong>(</strong><strong>bool</strong><strong>)</strong> – True or Flase 是否对数据进行归一化处理；</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>拟合后的模型.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_learn.gen_data">
+<span class="sig-name descname"><span class="pre">gen_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_learn.gen_data" title="永久链接至目标">¶</a></dt>
+<dd><p>用formual (str格式 )形式获取测试训练数据;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>formula</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 回归公式;</p></li>
+<li><p><strong>ratio</strong><strong>(</strong><strong>float</strong><strong>)</strong> – 测试数据比例 , 设置为0时则默认训练用全量数据;</p></li>
+<li><p><strong>is_scale</strong><strong>(</strong><strong>bool</strong><strong>)</strong> – True or Flase 是否对数据进行归一化处理;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>根据需求返回生成数据集(DataFrame).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_learn.search_hyper_para">
+<span class="sig-name descname"><span class="pre">search_hyper_para</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_learn.search_hyper_para" title="永久链接至目标">¶</a></dt>
+<dd><p>对给定的模型进行超参搜索 , 采用 K 折检验; 不支持无监督学习！</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 待搜索的模型；</p></li>
+<li><p><strong>param_grid</strong><strong>(</strong><strong>list</strong><strong>)</strong> – 待搜索的参数列表;</p></li>
+<li><p><strong>n_splits</strong><strong>(</strong><strong>int</strong><strong>)</strong> – K 折检验的 K 值;</p></li>
+<li><p><strong>random_seed</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 随机种子;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>grid.best_params_最优超参列表.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_learn.svm_svc">
+<span class="sig-name descname"><span class="pre">svm_svc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwarg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_learn.svm_svc" title="永久链接至目标">¶</a></dt>
+<dd><p>支持向量机方法 , 返回为指定模型;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>formula</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 回归公式;</p></li>
+<li><p><strong>kernal</strong><strong>(</strong><strong>str</strong><strong>)</strong> – SVC支持向量机的核函数;</p></li>
+<li><p><strong>test_ratio</strong><strong>(</strong><strong>float</strong><strong>)</strong> – 0~1数值 , 测试数据比例 , 设置为0时则默认训练用全量数据;</p></li>
+<li><p><strong>is_scale</strong><strong>(</strong><strong>bool</strong><strong>)</strong> – True or Flase 是否对数据进行归一化处理；</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>拟合后的模型svc.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Task_1.data_pd">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Task_1.</span></span><span class="sig-name descname"><span class="pre">data_pd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.black_na_ret">
+<span class="sig-name descname"><span class="pre">black_na_ret</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.black_na_ret" title="永久链接至目标">¶</a></dt>
+<dd><p>处理有黑色标注的数据;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><p><strong>name</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 待处理数据框的名字;</p>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>ret(DataFrame): 去除有黑色标注的数据后的数据框.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.get_shape">
+<span class="sig-name descname"><span class="pre">get_shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.get_shape" title="永久链接至目标">¶</a></dt>
+<dd><p>输出所有表的结构信息;</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.merge_data">
+<span class="sig-name descname"><span class="pre">merge_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.merge_data" title="永久链接至目标">¶</a></dt>
+<dd><p>根据给定的表名合并 Schedule 中的 description;
+数据框整合 (merge连接);</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><p><strong>name</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 待处理数据框的名字;</p>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>df(DataFrame): 合并后的数据框.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.one_time_yellow">
+<span class="sig-name descname"><span class="pre">one_time_yellow</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.one_time_yellow" title="永久链接至目标">¶</a></dt>
+<dd><p>一次性处理所有数据框中的黄色无用数据;</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.output">
+<span class="sig-name descname"><span class="pre">output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_csv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.output" title="永久链接至目标">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong><strong>(</strong><strong>DataFrame</strong><strong>)</strong> – 待保存的数据框;</p></li>
+<li><p><strong>file_name</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 保存文件名,不用带后缀;</p></li>
+<li><p><strong>is_csv</strong><strong>(</strong><strong>Bool</strong><strong>)</strong> – 是否保存为csv格式 ,否则存为xlsx格式;</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.read_data_all">
+<span class="sig-name descname"><span class="pre">read_data_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.read_data_all" title="永久链接至目标">¶</a></dt>
+<dd><p>多表数据读入,多级索引结构导入;
+表的基础数据清洗 (NA处理、删除非必要数据);</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.search_district">
+<span class="sig-name descname"><span class="pre">search_district</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">18</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">district</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.search_district" title="永久链接至目标">¶</a></dt>
+<dd><p>根据给定的区号查询区名;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state</strong><strong>(</strong><strong>int</strong><strong>)</strong> – state 编号;</p></li>
+<li><p><strong>district</strong><strong>(</strong><strong>int</strong><strong>)</strong> – district 编号;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>name(str): 区名.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.show_data">
+<span class="sig-name descname"><span class="pre">show_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.show_data" title="永久链接至目标">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong><strong>(</strong><strong>DataFrame</strong><strong>)</strong> – 输入的数据框;</p></li>
+<li><p><strong>n</strong><strong>(</strong><strong>int</strong><strong>)</strong> – 展示数据的行数;</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Task_1.data_pd.yellow_na">
+<span class="sig-name descname"><span class="pre">yellow_na</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Task_1.data_pd.yellow_na" title="永久链接至目标">¶</a></dt>
+<dd><p>处理黄色无用数据;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><p><strong>name</strong><strong>(</strong><strong>str</strong><strong>)</strong> – 待处理数据框的名字;</p>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>是否成功的信息.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2022, Wu Yi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
